@@ -213,7 +213,7 @@ export default function CustomWebAppSection() {
               fill
               sizes="(max-width: 1024px) 100vw, 950px"
               className="object-cover object-center animate-fade-in transition-all duration-700 pointer-events-none"
-              priority
+              loading="lazy"
             />
 
             {/* Subtle Gradient Overlay for Readability */}

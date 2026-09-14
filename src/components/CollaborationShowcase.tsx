@@ -20,7 +20,7 @@ export default function CollaborationShowcase() {
             fill
             sizes="(max-width: 1200px) 100vw, 1150px"
             className="object-cover object-center group-hover:scale-[1.015] transition-transform duration-700 ease-out"
-            priority
+            loading="lazy"
           />
         </div>
 
