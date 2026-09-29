@@ -73,6 +73,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs sm:text-sm text-slate-400">
               <li><a href="https://hrmocup.web.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">HR Matrix Attendance</a></li>
               <li><a href="https://warashop88-79470.web.app" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Wara Shop E-commerce</a></li>
+              <li><a href="https://smile-clinic-bangkok.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Smile Clinic Bangkok</a></li>
             </ul>
           </div>
 
