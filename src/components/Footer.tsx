@@ -74,6 +74,7 @@ export default function Footer() {
               <li><a href="https://hrmocup.web.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">HR Matrix Attendance</a></li>
               <li><a href="https://warashop88-79470.web.app" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Wara Shop E-commerce</a></li>
               <li><a href="https://smile-clinic-bangkok.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Smile Clinic Bangkok</a></li>
+              <li><a href="https://siamestate.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">SiamEstate Real Estate</a></li>
             </ul>
           </div>
 

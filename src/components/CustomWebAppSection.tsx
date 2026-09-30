@@ -63,7 +63,7 @@ export default function CustomWebAppSection() {
     }
   ];
 
-  // 3 Live Featured Projects
+  // 4 Live Featured Projects
   const projects = [
     {
       id: 1,
@@ -91,6 +91,15 @@ export default function CustomWebAppSection() {
       desc: 'ระบบเว็บไซต์คลินิกทันตกรรม นัดหมายแพทย์ออนไลน์ และแสดงบริการทันตกรรมครบวงจร',
       image: '/images/dental.png',
       link: 'https://smile-clinic-bangkok.vercel.app/'
+    },
+    {
+      id: 4,
+      badge: 'ผลงาน #4',
+      title: 'SiamEstate Luxury Real Estate',
+      category: 'Luxury Real Estate & Property Platform',
+      desc: 'ระบบค้นหาและซื้อขายอสังหาริมทรัพย์ระดับลักชัวรี แสดงข้อมูลโครงการและนัดชมแบบเรียลไทม์',
+      image: '/images/SiamEstate.png',
+      link: 'https://siamestate.vercel.app/'
     }
   ];
 
@@ -303,15 +312,15 @@ export default function CustomWebAppSection() {
       </div>
 
       {/* ======================================================== */}
-      {/* 🌟 3 FEATURED LIVE PROJECTS: SLIDER ON MOBILE, GRID ON DESKTOP */}
+      {/* 🌟 4 FEATURED LIVE PROJECTS: SLIDER ON MOBILE, GRID ON DESKTOP */}
       {/* ======================================================== */}
-      <div className="w-full max-w-6xl mx-auto mt-6 sm:mt-10">
+      <div className="w-full max-w-7xl mx-auto mt-6 sm:mt-10">
         
         {/* Section Header with Mobile Swipe Hint */}
         <div className="flex items-center justify-between px-1 mb-3 sm:mb-5">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-slate-900/90 border border-slate-700/80 text-[11px] sm:text-xs font-mono font-bold text-[#2bccaf] shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-[#2bccaf] animate-pulse" />
-            <span>FEATURED LIVE PROJECTS (3 PROTOTYPES)</span>
+            <span>FEATURED LIVE PROJECTS (4 PROTOTYPES)</span>
           </div>
 
           <span className="text-[10px] font-mono text-slate-400 md:hidden flex items-center gap-1">
@@ -320,11 +329,11 @@ export default function CustomWebAppSection() {
           </span>
         </div>
 
-        {/* Responsive Container: Horizontal Swipe on Mobile (< md), 3-Col Grid on Desktop (md+) */}
+        {/* Responsive Container: Horizontal Swipe on Mobile (< md), 2-Col on Tablet, 4-Col Grid on Desktop (lg+) */}
         <div
           ref={projectScrollRef}
           onScroll={handleProjectScroll}
-          className="flex md:grid md:grid-cols-3 gap-3.5 sm:gap-5 text-left overflow-x-auto md:overflow-x-visible pb-3 pt-1 px-1 md:p-0 snap-x snap-mandatory scroll-smooth"
+          className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4.5 text-left overflow-x-auto md:overflow-x-visible pb-3 pt-1 px-1 md:p-0 snap-x snap-mandatory scroll-smooth"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {projects.map((item) => (
@@ -333,7 +342,7 @@ export default function CustomWebAppSection() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-[84vw] xs:w-[82vw] sm:w-[340px] md:w-auto shrink-0 snap-center group relative rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 bg-gradient-to-b from-slate-900/90 to-[#0a101a] border border-slate-800 hover:border-[#2bccaf]/60 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(43,204,175,0.2)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between block cursor-pointer"
+              className="w-[84vw] xs:w-[82vw] sm:w-[320px] md:w-auto shrink-0 snap-center group relative rounded-2xl sm:rounded-3xl p-3.5 sm:p-4.5 bg-gradient-to-b from-slate-900/90 to-[#0a101a] border border-slate-800 hover:border-[#2bccaf]/60 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(43,204,175,0.2)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between block cursor-pointer"
               title={`คลิกเพื่อทดลองใช้งานจริง: ${item.title}`}
             >
               {/* Header inside Card */}
@@ -350,10 +359,10 @@ export default function CustomWebAppSection() {
                   </span>
                 </div>
 
-                <h3 className="text-xs sm:text-base font-bold text-white group-hover:text-[#2bccaf] transition-colors mb-0.5 sm:mb-1">
+                <h3 className="text-xs sm:text-sm md:text-base font-bold text-white group-hover:text-[#2bccaf] transition-colors mb-0.5 sm:mb-1">
                   {item.title}
                 </h3>
-                <p className="text-[10.5px] sm:text-xs text-slate-400 leading-relaxed mb-2.5 sm:mb-3">
+                <p className="text-[10.5px] sm:text-xs text-slate-400 leading-relaxed mb-2.5 sm:mb-3 line-clamp-2 sm:line-clamp-none">
                   {item.desc}
                 </p>
               </div>
@@ -365,7 +374,7 @@ export default function CustomWebAppSection() {
                   alt={item.title}
                   fill
                   className="object-contain p-1 drop-shadow-[0_10px_25px_rgba(0,0,0,0.6)] group-hover:scale-105 group-hover:drop-shadow-[0_15px_30px_rgba(43,204,175,0.3)] transition-all duration-300"
-                  sizes="(max-width: 768px) 85vw, 380px"
+                  sizes="(max-width: 768px) 85vw, (max-width: 1024px) 50vw, 300px"
                 />
               </div>
             </a>
